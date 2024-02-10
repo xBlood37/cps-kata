@@ -1,0 +1,20 @@
+.main-title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 12px;
+  font-family: 'TT Lakes Medium';
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+
+  &::before {
+    display: inline-block;
+    position: relative;
+    content: ' ';
+    @include size(4px, 40px);
+    background-color: $mainColorElem;
+    top: 0px;
+    left: -12px;
+  }
+}

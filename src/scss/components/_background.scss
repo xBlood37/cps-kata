@@ -1,0 +1,8 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,22 @@
+.order-button {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ff3e79;
+  color: #ffffff;
+  @include size(120px, 32px);
+
+  position: relative;
+  top: 20px;
+  left: 18px;
+
+  &:hover {
+    background-color: #ab2a51;
+  }
+}
+
+@media (min-width: 768px) {
+  .order-button {
+    position: static;
+  }
+}

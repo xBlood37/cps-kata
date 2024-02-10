@@ -1,0 +1,43 @@
+.wrapper {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__post {
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: 676px) {
+    &__post {
+      padding-top: 24px;
+    }
+  }
+
+  &__vat {
+    padding: 16px;
+  }
+
+  &__footer {
+    padding: 16px;
+  }
+
+  &__menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__call {
+    padding: 16px;
+  }
+
+  &__feedback {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}

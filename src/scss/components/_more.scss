@@ -1,0 +1,47 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.more {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    background-color: $hoverColor;
+  }
+
+  &::before {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    content: '';
+    transform: rotate(45deg);
+    transition: 0.2s ease-in-out;
+    border: solid #ff3e79;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    vertical-align: middle;
+  }
+
+  &--rotate {
+    &::before {
+      transform: rotate(225deg);
+    }
+  }
+
+  &--display {
+    display: none;
+  }
+
+  &--margin {
+    margin-left: 16px;
+  }
+
+  @media (min-width: 768px) {
+    &--display {
+      display: block;
+    }
+  }
+}

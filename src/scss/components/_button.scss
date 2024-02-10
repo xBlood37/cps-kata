@@ -1,0 +1,70 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.button {
+  content: '';
+  cursor: pointer;
+  @include size(40px, 40px);
+  border: none;
+  background: $buttonColor;
+  border-radius: 20px;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $mainColorElem;
+  }
+
+  &:active {
+    background-color: $mainColorElemHover;
+  }
+
+  &--close {
+    background-image: url('../img/close.svg');
+  }
+
+  &--search {
+    background-image: url('../img/search.svg');
+  }
+
+  &--burger {
+    background-image: url('../img/burger.svg');
+  }
+
+  &--chat {
+    background-image: url('../img/chat.svg');
+  }
+
+  &--profile {
+    background-image: url('../img/profile.svg');
+  }
+
+  &--repair {
+    background-image: url('../img/repair.svg');
+  }
+
+  &--checklist {
+    background-image: url('../img/checklist.svg');
+  }
+
+  &--call {
+    background-image: url('../img/call.svg');
+  }
+
+  &--burger,
+  &--call,
+  &--chat,
+  &--profile,
+  &--search,
+  &--close,
+  &--repair,
+  &--checklist {
+    @include backgroundRepeatPosition(no-repeat, center);
+  }
+}
+
+.divider {
+  content: ' ';
+  @include size(2px, 32px);
+  background-color: #a9a9a987;
+  border-radius: 1px;
+}

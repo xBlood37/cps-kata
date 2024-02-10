@@ -1,0 +1,81 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+.product {
+  &__list {
+    margin: 0;
+    padding: 16px;
+    width: auto;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-areas:
+      'repair repair repair'
+      'price price price'
+      'date date order-button';
+
+    cursor: pointer;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    @include size(240px, 200px);
+  }
+
+  &__reapir {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Ремонтные услуги';
+    }
+
+    grid-area: repair;
+  }
+
+  &__price {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Цена';
+    }
+
+    grid-area: price;
+  }
+
+  &__date {
+    &::before {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      content: 'Срок';
+    }
+
+    grid-area: date;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      transform: translate3d(-0px, 0px, 0px) !important;
+    }
+
+    &__card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+    }
+  }
+}
