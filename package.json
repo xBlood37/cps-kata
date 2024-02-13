@@ -2,11 +2,7 @@
   "name": "web-last-block",
   "version": "1.0.0",
   "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xBlood37/cps-3.0.git"
-  },
-  "homepage": "http://xBlood37.github.io/cps-3.0",
+  "homepage": "https://xblood37.github.io/cps-kata/",
   "keywords": [
     "web",
     "scss",
@@ -60,7 +56,6 @@
     }
   },
   "dependencies": {
-    "locomotive-scroll": "^4.1.4",
     "swiper": "^9.1.0"
   }
 }
